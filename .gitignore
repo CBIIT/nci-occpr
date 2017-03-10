@@ -5,4 +5,4 @@ sites/*/settings*.php
 sites/*/files
 sites/*/private
 
-sites/proteomics/default.settings.php
+sites/*/default.settings.php
