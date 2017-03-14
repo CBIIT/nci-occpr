@@ -1,3 +1,4 @@
-﻿.md-slide-wrap {display: none; height: 0; visibility: hidden;}
+﻿/* print css*/
 
+.md-slide-wrap {display: none; height: 0; visibility: hidden;}
 .not-front .row.full-width.header-banner {display: none; height: 0; visibility: hidden;}
