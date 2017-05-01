@@ -3,7 +3,8 @@
 jQuery(document).ready(function ($) {
 	
 	// splitter in footer, hides last bar
-	$('.footer .menu li.leaf:not(:last)').after('<li class="footer-divider">|</li>');
+	$('.footer .block-menu-menu-footer-menu .menu li.leaf:not(:last)').after('<li class="footer-divider">|</li>');
+    $('.footer .block-block-4 .menu li.leaf:not(:last)').after('<li class="footer-divider">|</li>');
 	
 	// toggle function to show/hide
 	$(document).ready(function(){

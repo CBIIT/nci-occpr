@@ -52,6 +52,7 @@
 
 <head>
 	<?php print $head; ?>
+	<meta http-equiv="x-ua-compatible" content="IE=EDGE" />
 	<title>
 		<?php print $head_title; ?>
 	</title>
