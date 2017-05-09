@@ -70,7 +70,7 @@
 
 
 	  
-	<div class="large-4 columns left-head-block">
+	<div class="large-3 columns left-head-block">
 		  <div class="main-menu-block">
 			<?php if (!empty($page['left-menu'])): ?>
 				  <?php print render($page['left-menu']); ?>
@@ -111,7 +111,7 @@
       <?php endif; ?>
     </div>
     
-    <div class="large-8 columns right-head-block-menu">
+    <div class="large-9 columns right-head-block-menu">
       <div class="menu-wrapper">
 		<?php if (!empty($page['menu'])): ?>
               <?php print render($page['menu']); ?>

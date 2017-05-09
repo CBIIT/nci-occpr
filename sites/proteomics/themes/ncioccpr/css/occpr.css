@@ -24,9 +24,6 @@ main { padding: 0; margin: 30px 0 50px 0; }
 .right-head-block-menu .menu-wrapper { display: table-cell; vertical-align: middle; }
 .left-head-block { display: table; height: 50px; margin: 0; }
 .left-head-block .main-menu-block { display: table-cell; vertical-align: middle; text-align: left; }
-/*.not-front .left-head-block .main-menu-block { display: table-cell; vertical-align: middle; text-align: left; }*/
-/*.not-front .right-head-block-menu { margin: 0; height: 50px; display: table; }*/
-/*.not-front .left-head-block { margin: 0; height: 50px; display: table; }*/
 
 
 /* Search */
@@ -38,10 +35,8 @@ main { padding: 0; margin: 30px 0 50px 0; }
 .sidebar .block .block-headline, .front .main-content .block .block-headline { padding: 0 5px 0 20px; }
 .sidebar .block table { border: 0 none; }
 .front .main-content .block .content { padding: 0 20px;}
-/*.front .main-content-wrapper .main-content { padding: 0; }*/
 .sidebar .side-sub-menu { margin: 0 0 20px 0; }
 .sidebar .side-sub-menu .content { padding: 0 20px 0 0; }
-/*.sidebar img { width: 100%; }*/
 
 .not-front main .main-content-wrapper { margin-bottom: 30px; }
 .not-front main .main-content { display:inline-block; padding: 0 0 20px 0; width:100%; }

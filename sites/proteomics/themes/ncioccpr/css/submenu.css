@@ -2,16 +2,12 @@
 /* Menu */
 ul.menu { margin-left: 0; }
 ul.menu { list-style-position: outsider; }
-.main-menu-block { /*background-color: #f6f6f6; border-color: gainsboro; border-radius: 3px; border-style: solid; border-width: 1px;*/ clear: both; /*margin-bottom: 10px; */ text-align: right; width: 100%; }
+.main-menu-block { clear: both; text-align: right; width: 100%; }
 .main-menu-block ul { padding: 0 0 0 20px; margin: 0; list-style: none; }
 .main-menu-block ul.menu li { margin: 0; padding: 3px 20px; display: inline-block; position: relative; z-index: 100; }
-.main-menu-block ul.menu li.last { padding: 3px 0 3px 20px; }
 .main-menu-block ul.menu.left-menu { padding: 0; margin: 0; list-style: none; }
 .main-menu-block ul.menu.left-menu > li:first-child { padding: 0; }
-.main-menu-block ul.menu > li > a, .main-menu-block ul.menu > li > span.nolink { /*font-family: 'Archivo Narrow', sans-serif;*/ color: #32302C; font-size:1.2em; text-transform:uppercase; }
-/*.section-antibody-portal .main-menu-block ul.menu > li > a, .section-antibody-portal .main-menu-block ul.menu > li > span.nolink { color: #32302C; }
-.section-assay-portal .main-menu-block ul.menu > li > a, .section-assay-portal .main-menu-block ul.menu > li > span.nolink { color: #32302C; }
-.section-data-portal .main-menu-block ul.menu > li > a, .section-data-portal .main-menu-block ul.menu > li > span.nolink { color: #32302C; }*/
+.main-menu-block ul.menu > li > a, .main-menu-block ul.menu > li > span.nolink { color: #32302C; font-size:1.1em; text-transform:uppercase; }
 .main-menu-block ul.menu > li > a:hover { text-decoration: none; }
 
 /* SIDEBAR MENU */
@@ -23,8 +19,6 @@ ul.menu { list-style-position: outsider; }
 .side-sub-menu ul.menu {  list-style-type:none; }
 .side-sub-menu ul.menu li { display:block; list-style-type:none; margin:.5rem; }
 .side-sub-menu ul.menu li a { text-indent:-.5rem; margin-left:5px; }
-/*.side-sub-menu ul.menu li a { text-indent:-.5rem; margin-left:-.5rem; }*/
-
 
 /* SECOND LEVEL */
 .main-menu-block ul li ul { width: 690px; left: 0; margin: 0 -1000em; opacity: 0; padding: 0 1000em; position: absolute; top: 100%; visibility: hidden; z-index: 101; }
@@ -38,3 +32,10 @@ ul.menu { list-style-position: outsider; }
 .top-header-links { color: #5b8fb2; float: right; font-size: .8em; text-transform: uppercase; }
 .top-header-links a { font-weight: 300; color: #666; margin: 0 .5em }
 .top-header-links a:hover { color: #5b8fb2; text-decoration: underline; }
+
+
+.leaf.portal-left { float: left; }
+.main-menu-block ul.menu li.portal-left { padding: 3px 5px; }
+.main-menu-block ul.menu li.portal-left a { padding: 15px 0 15px 35px; }
+.menu-name-menu-data-portal > ul, .menu-name-menu-antibody-portal > ul, .menu-name-menu-assay-portal > ul { padding: 0px !important; }
+.main-menu-block ul.menu.left-menu li.last { padding: 3px 5px; }
