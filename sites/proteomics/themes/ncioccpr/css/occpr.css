@@ -1,6 +1,7 @@
 html, body { overflow-y: scroll; overflow-x: hidden; font-family: 'Montserrat', sans-serif; font-weight:300 !important; color: #222; }
 body { background-color: #FFFFFF; font-size: 16px; text-shadow: 1px 1px 1px rgba(0,0,0,0.004); text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
 main { padding: 0; margin: 30px 0 50px 0; }
+/*.columns.nopadding { padding-left: 0; padding-right: 0; }*/
 .row.full-width.minibar { max-width: 100% !important; margin:20px 0; }
 .row.full-width.minibarslogan { max-width: 100% !important; }
 .page { max-width: 100% !important; }
@@ -11,18 +12,21 @@ main { padding: 0; margin: 30px 0 50px 0; }
 .not-front .row.full-width.header { background-color: #FFFFFF; max-width: 100% !important; }
 .not-front .row.full-width.header-banner { background-color: #dbdbde; max-width: 100% !important; height:auto; text-align: center; }
 .row.full-width.footer { background: #5b8fb2; max-width: 100% !important; }
-.section-antibody-portal .row.full-width.footer { background: #294d64; }
-.section-assay-portal .row.full-width.footer { background: #bd9f88; }
-.section-data-portal .row.full-width.footer { background: #642a59; }
+/*.section-antibody-portal .row.full-width.footer { background: #294d64; }
+.section-assay-portal .row.full-width.footer { background: #2e473a; }
+.section-data-portal .row.full-width.footer { background: #642a59; }*/
+.section-antibody-portal .row.full-width.footer { background: #8B668B; }
+.section-assay-portal .row.full-width.footer { background: #668B8B; }
+.section-data-portal .row.full-width.footer { background: #A2B5CD; }
 .row.full-width .row { margin: 0 auto; /*max-width: 62.5rem;  background: inherit;*/ }
 .row.full-width .row { margin: 0 auto; max-width: 80.5rem;/*  background: inherit;*/ }
 
 /* Header */
 /*.left-head-block { margin: 20px 0; }*/
 .right-head-block-search { margin: 20px 0; width: 300px; float: right }
-.right-head-block-menu { margin: 0; height:50px; display: table; }
+.right-head-block-menu { margin: 0; height:50px; display: table; width: 70% !important; }
 .right-head-block-menu .menu-wrapper { display: table-cell; vertical-align: middle; }
-.left-head-block { display: table; height: 50px; margin: 0; }
+.left-head-block { display: table; height: 50px; margin: 0; width: 30% !important; }
 .left-head-block .main-menu-block { display: table-cell; vertical-align: middle; text-align: left; }
 
 
@@ -86,8 +90,6 @@ article#node-3.node.node-page.view-mode-full div.field.field-name-body.field-typ
 .view-news-updates .views-row.views-row-first { margin: 0 0 20px 0; }
 .view-news-updates .views-row.views-row-last { margin: 20px 0 0 0; }
 .view-news-updates .views-field-title a { font-weight: bold; line-height:22px; }
-.view-ncl-scientific-bibliography .item-list ul { list-style-type: none; padding:0; margin:0; }
-.view-ncl-scientific-bibliography .item-list ul li { list-style-type: none; margin:0; padding: 5px 0 5px 20px; background: transparent url('../images/read-more.jpg') left 3px no-repeat; }
 .view-faqs .item-list ul { list-style-type: none; padding:0; margin:0; }
 .view-faqs .item-list ul li { list-style-type: none; margin:0; padding: 0 0 5px 20px; background: transparent url('../images/read-more.jpg') left 3px no-repeat; }
 .view-faqs .item-list ul li ul { list-style-type: disc; padding: 0 0 10px 20px; margin:0; }
@@ -110,11 +112,14 @@ H2 { font-size: 2.0em; color: #515151; }
 H3 { font-size: 1.6em; color: #000000; }
 p { font-family: inherit; font-weight: inherit; }
 .archivo { font-family: 'Archivo Narrow', sans-serif; }
-.section-antibody-portal h1 { color: #294d64; }
-.section-assay-portal h1 { color: #bd9f88; }
-.section-data-portal h1 { color: #642a59; }
+.section-antibody-portal h1 { color: #642a59; }
+.section-assay-portal h1 { color: #2D6649; }
+.section-data-portal h1 { color: #294d64; }
 .section-antibody-portal h2, .section-antibody-portal h3, .section-assay-portal h2, .section-assay-portal h3, .section-data-portal h2, .section-data-portal h3 { color: #515151; }
-
+.pad10 { padding:10px; }
+.margin10 { margin:10px; }
+.pad20 { padding:20px; }
+.margin20 { margin:20px; }
 .staff { overflow:auto; width: 100%; }
 .staff::after { display:block; content:""; clear:both; }
 .staff-left, .staff-right { width: 50%; padding: 1em; } 
@@ -141,6 +146,12 @@ a:hover, a:focus { color: #5b8fb2; text-decoration: none; }
 a.read-more, a.more, a.learn-more, a.views-more-link { background: transparent url('../images/read-more.png') no-repeat center left; padding-left:15px; }
 .breadcrumbs > * a, .breadcrumbs > * span {  color: #5b8fb2; text-transform: uppercase; }
 h4.block-title a { color:#FFFFFF; }
+button, .button { font-weight: normal; }
+button.assay-portal-button { background-color: transparent; border-color: #2D6649; border-radius: 15px; color: #2D6649; }
+button.assay-portal-button:hover { background-color: #e3e3e3; color: #2D6649; }
+
+/*button.antibody-portal-button { background-color: #294d64; }
+button.data-portal-button { background-color: #642a59; }*/
 
 /* Colors */
 .fundingBlue { background-color: #e5e8ec; padding: 5px; }

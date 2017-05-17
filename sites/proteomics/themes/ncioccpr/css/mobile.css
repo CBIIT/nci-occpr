@@ -17,7 +17,7 @@ main { padding: 10px 0; }
 @media only screen and (max-width: 767px) { 
 
 .row.full-width.header { height: auto; }
-.left-head-block { margin: 5px 0; }
+.left-head-block { margin: 5px 0; width: auto !important; }
 .minibar .right-banner-block { padding: 10px 10px 0 10px; }
 .right-head-block-menu { margin: 5px 0; position: absolute; right: 0; width: auto; height: auto; }
 .main-menu-block { border-width: 0 !important; }
@@ -29,3 +29,7 @@ main { padding: 10px 0; }
 
 
 } /* max-width 1025px, large screens, mobile-only styles, use when QAing mobile issues */
+
+@media only screen and (max-width: 991px) { 
+	.main-menu-block ul.menu > li {font-size: .8em !important; }
+}
