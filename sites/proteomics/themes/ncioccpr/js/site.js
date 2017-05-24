@@ -27,6 +27,16 @@ jQuery(document).ready(function ($) {
 		jQuery(this).closest('tr').next().find('.abstract').toggle();
 	});
 	
+	
+	// antibody portal stats
+	$.ajax({
+		type: "GET",
+		url: "https://antibodies.cancer.gov/apps/site/counts" 
+	}).done(function(result) {
+	   $("#antibody_portal_widget").html(result);
+	});
+
+	
 
 
 });
