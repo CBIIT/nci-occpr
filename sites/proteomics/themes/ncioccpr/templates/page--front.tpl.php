@@ -1,5 +1,6 @@
 <!--start nci_header-->
 <?php if ($alt_header): ?>
+
 <div class="row full-width banner minibar">
 	<div class="minibanner-white">
 		<section class="row <?php print $alt_header_classes; ?>">

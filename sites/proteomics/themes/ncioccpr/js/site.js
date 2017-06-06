@@ -36,8 +36,20 @@ jQuery(document).ready(function ($) {
 	   $("#antibody_portal_widget").html(result);
 	});
 
-	
+	$('#sidr-button').sidr({
+      name: 'sidr',
+      source: '#sidr-menu',
+                  side: 'right'
+    });
 
+    $( ":hidden").attr( "aria-hidden", "true" );
+    $( ".menu li span").attr( "aria-haspopup", "true" );
+    $( ".menu li span").attr( "tabindex", "0" );
+    //$( ".menu li span").attr( "aria-controls", "true" );
+    $( ".menu li span").attr( "aria-expanded", "true" );
+    $( ".menu li a").attr( "tabindex", "0" );
+    $( ".md-arrow .md-arrow-left span").attr( "tabindex", "0" );
+    $( ".md-arrow .md-arrow-right span").attr( "tabindex", "0" );
 
 });
 
