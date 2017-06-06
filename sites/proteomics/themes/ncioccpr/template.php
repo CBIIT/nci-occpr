@@ -209,38 +209,40 @@ function THEMENAME_preprocess_views_view_fields(&$variables) {
 function ncioccpr_form_alter(array &$form, array &$form_state = array(), $form_id = NULL) {
   if ($form_id) {
     switch ($form_id) {
-      case 'search_form':
-        // Add a clearfix class so the results don't overflow onto the form.
-        $form['#attributes']['class'][] = 'clearfix';
-
-        // Remove container-inline from the container classes.
-        $form['basic']['#attributes']['class'] = array();
-
-        // Hide the default button from display.
-        $form['basic']['submit']['#attributes']['class'][] = 'element-invisible';
-
-        // Implement a theme wrapper to add a submit button containing a search
-        // icon directly after the input element.
-        $form['basic']['keys']['#theme_wrappers'] = array('search_form_wrapper');
-        $form['basic']['keys']['#title'] = '';
-        //control the width of the input           
-        $form['basic']['keys']['#attributes']['class'][] = 'wide input';
-        $form['basic']['keys']['#attributes']['placeholder'] = t('Search...');
-
-        break;
+//      case 'search_form':
+//        // Add a clearfix class so the results don't overflow onto the form.
+//        $form['#attributes']['class'][] = 'clearfix';
+//
+//        // Remove container-inline from the container classes.
+//        $form['basic']['#attributes']['class'] = array();
+//
+//        // Hide the default button from display.
+//        $form['basic']['submit']['#attributes']['class'][] = 'element-invisible';
+//
+//        // Implement a theme wrapper to add a submit button containing a search
+//        // icon directly after the input element.
+//        $form['basic']['keys']['#theme_wrappers'] = array('search_form_wrapper');
+//        $form['basic']['keys']['#title'] = 'Search Site';
+//        //control the width of the input           
+//        $form['basic']['keys']['#attributes']['class'][] = 'wide input';
+//        $form['basic']['keys']['#attributes']['placeholder'] = t('Search...');
+//        $form['basic']['keys']['#attributes']['id'][] = 'search-form';
+//
+//        break;
       case 'search_block_form':
+        $form['search_block_form']['#theme_wrappers'] = array('search_form_wrapper');
         $form['#attributes']['class'][] = 'form-search';
-
-        $form['search_block_form']['#title'] = '';
+        $form['search_block_form']['#title'] = 'Search';
         $form['search_block_form']['#attributes']['placeholder'] = t('Search...');
         //control the width of the input
-        $form['search_block_form']['#attributes']['class'][] ='wide input headsearch';
+        $form['search_block_form']['#attributes']['class'][] = 'wide input headsearch';
+        $form['search_block_form']['#attributes']['id'][] = 'search-form';
 
         // Hide the default button from display and implement a theme wrapper
         // to add a submit button containing a search icon directly after the
         // input element.
         $form['actions']['submit']['#attributes']['class'][] = 'element-invisible';
-        $form['search_block_form']['#theme_wrappers'] = array('search_form_wrapper');
+
 
         // Apply a clearfix so the results don't overflow onto the form.
         $form['#attributes']['class'][] = 'content-search';
@@ -256,8 +258,8 @@ function ncioccpr_search_form_wrapper($variables) {
   $output = '<div class="field append">';
   $output .= $variables['element']['#children'];
   $output .= '<button type="submit" class="medium primary btn small-4 headsearch-btn">';
-  $output .= '<span class="icon-search entypo scale-lg">SEARCH</span>';
-  $output .= '<span class="element-invisible">' . t('Search') . '</span>';
+  $output .= '<span class="icon-search entypo scale-lg"><label for="search-form">SEARCH</label></span>';
+//  $output .= '<span class="element-invisible"><label for="search-block-form">' . t('Search') . '</label></span>';
   $output .= '</button>';
   $output .= '</div>';
 
