@@ -154,13 +154,15 @@ a.read-more, a.more, a.learn-more, a.views-more-link { background: transparent u
 .breadcrumbs > * a, .breadcrumbs > * span {  color: #2b7bba; text-transform: uppercase; }
 h4.block-title a { color:#FFFFFF; }
 button, .button { font-weight: normal; }
-.button.portal-button { height: 80px; line-height: 25px; width: 250px; }
-.button.assay-portal-button { background-color: transparent; border-color: #2D6649; border-radius: 10px; color: #222; text-decoration: none; }
-.button.assay-portal-button:hover { background-color: #e3e3e3; color: #2D6649; }
-.button.data-portal-button { background-color: transparent; border-color: #294d64; border-radius: 10px; color: #222; text-decoration: none; }
-.button.data-portal-button:hover { background-color: #e3e3e3; color: #294d64; }
-.button.antibody-portal-button { background-color: transparent; border-color: #642a59; border-radius: 10px; color: #222; text-decoration: none; }
-.button.antibody-portal-button:hover { background-color: #e3e3e3; color: #642a59; }
+
+#portal-wrapper { display: flex; align-items: center; justify-content: center; }
+.portal-button { padding: 10px; border-radius: 10px; margin: 10px; white-space: normal; }
+.portal-button.data-portal { width: 250px; height: 80px; background-color: transparent; border: 2px solid #294d64; border-radius: 10px; color: #222; text-decoration: none; }
+.portal-button.data-portal:hover { background-color: #e3e3e3; color: #294d64; }
+.portal-button.assay-portal { width: 250px; height: 80px; background-color: transparent; border: 2px solid #2D6649; border-radius: 10px; color: #222; text-decoration: none; }
+.portal-button.assay-portal:hover { background-color: #e3e3e3; color: #2D6649; }
+.portal-button.antibody-portal { width: 250px; height: 80px; background-color: transparent; border: 2px solid #642a59; border-radius: 10px; color: #222; text-decoration: none; }
+.portal-button.antibody-portal:hover { background-color: #e3e3e3; color: #642a59; }
 
 /*button.antibody-portal-button { background-color: #294d64; }
 button.data-portal-button { background-color: #642a59; }*/

@@ -23,9 +23,11 @@ a.menu-home { color: #32302C; }
 
 /* SECOND LEVEL */
 .main-menu-block ul li ul { width: 690px; left: 0; margin: 0 -1000em; opacity: 0; padding: 0 1000em; position: absolute; top: 100%; visibility: hidden; z-index: 101; }
-.main-menu-block ul li:hover ul { opacity: 1; visibility: visible; }
+.main-menu-block ul li:hover > ul, .main-menu-block ul li:focus + ul { opacity: 1; visibility: visible; }
+.main-menu-block ul > li span:hover + ul { opacity: 1; visibility: visible; }
+.main-menu-block ul > li span:focus + ul { opacity: 1; visibility: visible; }
+.main-menu-block ul > li span:active + ul { opacity: 1; visibility: visible; }
 .main-menu-block ul li ul li { padding: 3px 0; text-align: left; width: 300px; background: #FFFFFF none repeat scroll 0 0; }
-.main-menu-block ul li:hover { /*font-weight: normal !important;*/ }
 .main-menu-block ul li ul li a { color: #5b8fb2 !important; font-size: 1em !important; font-weight: normal !important; padding: 5px 15px 0 0 !important }
 .main-menu-block ul li ul li a:hover { color: #294d64 !important; text-decoration:underline; }
 

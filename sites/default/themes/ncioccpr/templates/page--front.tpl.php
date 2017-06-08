@@ -115,6 +115,9 @@
 			<div class="row full-width full-width-slider">
 
 				<?php if (!empty($page['slider'])): ?>
+				<div class="skip-link">
+		            <a href="#rs-wrapper-1" class="element-invisible element-focusable">Use the left and right arrows to navigate slider</a>
+		        </div>
 				<!--/.featured -->
 				<!--<section class="l-slider row">-->
 				<section class="l-slider">
