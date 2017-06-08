@@ -1,0 +1,12 @@
+.block-revslider{
+    position: relative;
+}
+.tp-caption iframe {
+    border: 0 none;
+}
+.tp-caption[data-link]{
+  cursor: pointer;
+}
+.rs-banner {
+    display: none;
+}
