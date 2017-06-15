@@ -44,15 +44,29 @@ jQuery(document).ready(function ($) {
 
     
     // 508 issue fix
-    $( ":hidden").attr( "aria-hidden", "true" );
-    $(".menu li span").attr("aria-haspopup", "true");
-    $(".menu li span").attr("tabindex", "0");
-    $(".menu li span").attr("aria-controls", "true");
-    $(".menu li span").attr("aria-expanded", "false");
-    $(".menu li a").attr("tabindex", "0");
-    $(".tp-bullets .bullet").attr("tabindex", "0");    
+    $(":hidden").attr( "aria-hidden", "true");
+    $(".menu-block-wrapper > ul > li > a").attr("aria-haspopup", "true");
+    $(".menu-block-wrapper > ul > li > a").attr("aria-controls", "true");
+    $(".menu-block-wrapper > ul > li > a").attr("aria-expanded", "false");
+/*    $(".menu li a").attr("tabindex", "0");*/
+/*    $(".menu li ul li a").attr("tabindex", "-1");*/
+    $(".menu li a.nolink").attr("href","#");
+    $(".tp-bullets .bullet").attr("tabindex", "0");
 
+	
+	$('.menu-block-wrapper > ul > li > a').focus(function () {
+		$('.menu-block-wrapper > ul > li').removeClass('force-show');
+		$(this).parent().addClass('force-show');
+	});
+
+	$(document).click(function () {
+		$('.menu-block-wrapper > ul > li').removeClass('force-show');
+	});
+	
 });
+
+
+
 
 
 // shows all items at once

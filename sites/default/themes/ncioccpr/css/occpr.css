@@ -11,7 +11,7 @@ main { padding: 0; margin: 30px 0 50px 0; }
 .not-front .row.full-width.main { position: relative; margin: 20px 0; }
 .not-front .row.full-width.header { background-color: #FFFFFF; max-width: 100% !important; }
 .not-front .row.full-width.header-banner { background-color: #dbdbde; max-width: 100% !important; height:auto; text-align: center; }
-.row.full-width.footer { background: #5b8fb2; max-width: 100% !important; }
+.row.full-width.footer { background: #2b7bba; max-width: 100% !important; }
 /*.section-antibody-portal .row.full-width.footer { background: #294d64; }
 .section-assay-portal .row.full-width.footer { background: #2e473a; }
 .section-data-portal .row.full-width.footer { background: #642a59; }*/
@@ -133,7 +133,7 @@ p.staff-title { font-size:14px; color:#5b8fb2; font-weight: bold; }
 .bio-pic { border-radius: 50%; }
 #antibody_portal_counts ul { list-style-type: none; padding: 0; margin: 0; }
 #antibody_portal_counts .ap_count { font-weight: bold; }
-span.views-field-title { display: block; font-size: 1.125em; margin: 10px 0; line-height: 1.4em; margin: 0.2em 0 0.5em; text-rendering: optimizelegibility; }
+span.views-field-title { display: block; font-size: 1.125em; line-height: 1.4em; margin: 0.2em 0 0.5em; text-rendering: optimizelegibility; }
 
 .logo { padding: 5px; }
 ul, ol, dl { list-style-position: outside; margin-left:1em; }
@@ -189,7 +189,7 @@ button.navbar-toggle { background-color: #ffffff; }
 .navbar-toggle .icon-bar { background-color: #888; }
 .icon-bar + .icon-bar { margin-top: 4px; }
 .navbar-toggle .icon-bar { border-radius: 1px; display: block; height: 2px; width: 22px; }
-.main-menu-block ul li ul { left: -191px; }
+/*.main-menu-block ul li ul { left: -191px; }*/
 #sidr-id-sidr-assay-portal-icon, #sidr-id-sidr-data-portal-icon { padding-left: 60px !important; background-position: 12px 4px; }
 #sidr-wrapper { display: none; }
 
