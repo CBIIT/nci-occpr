@@ -29,12 +29,12 @@ jQuery(document).ready(function ($) {
 
 
     // antibody portal stats
-    $.ajax({
-        type: "GET",
-        url: "https://antibodies.cancer.gov/apps/site/counts"
-    }).done(function (result) {
-        $("#antibody_portal_widget").html(result);
-    });
+//    $.ajax({
+//        type: "GET",
+//        url: "https://antibodies.cancer.gov/apps/site/counts"
+//    }).done(function (result) {
+//        $("#antibody_portal_widget").html(result);
+//    });
 
     $('#sidr-button').sidr({
         name: 'sidr',
